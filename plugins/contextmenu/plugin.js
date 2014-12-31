@@ -54,7 +54,7 @@ CKEDITOR.plugins.add( 'contextmenu', {
 								// which make this property unreliable. (https://dev.ckeditor.com/ticket/4826)
 								( CKEDITOR.env.webkit ? holdCtrlKey : ( CKEDITOR.env.mac ? domEvent.$.metaKey : domEvent.$.ctrlKey ) );
 
-						if ( nativeContextMenuOnCtrl && isCtrlKeyDown )
+						if (!nativeContextMenuOnCtrl || !isCtrlKeyDown)
 							return;
 
 						// Cancel the browser context menu.

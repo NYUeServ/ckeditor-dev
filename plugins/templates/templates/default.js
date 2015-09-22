@@ -25,25 +25,16 @@ CKEDITOR.addTemplates( 'default', {
 			'</p>'
 	},
 		{
-		title: 'Strange Template',
+		title: 'Two-Column Layout',
 		image: 'template2.gif',
-		description: 'A template that defines two colums, each one with a title, and some text.',
+		description: 'A template that defines two columns, each with some text.',
 		html: '<table cellspacing="0" cellpadding="0" style="width:100%" border="0">' +
 			'<tr>' +
-				'<td style="width:50%">' +
-					'<h3>Title 1</h3>' +
-				'</td>' +
-				'<td></td>' +
-				'<td style="width:50%">' +
-					'<h3>Title 2</h3>' +
-				'</td>' +
-			'</tr>' +
-			'<tr>' +
-				'<td>' +
+				'<td style="width:49.5%;vertical-align:top;">' +
 					'Text 1' +
 				'</td>' +
-				'<td></td>' +
-				'<td>' +
+				'<td style="width:1%>&nbsp;</td>' +
+				'<td style="width:49.5%;vertical-align:top;">' +
 					'Text 2' +
 				'</td>' +
 			'</tr>' +

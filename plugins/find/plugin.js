@@ -20,7 +20,7 @@ CKEDITOR.plugins.add( 'find', {
 
 		if ( editor.ui.addButton ) {
 			editor.ui.addButton( 'Find', {
-				label: editor.lang.find.find,
+				label: editor.lang.find.title,
 				command: 'find',
 				toolbar: 'find,10'
 			} );
